@@ -1,21 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>HealthSystem</title>
-</head>
-<body>
-<div class="topnav">
-    <a class="active" href="#home">Kullanıcı Bilgileri</a>
-    <a href="#news">Tarifler</a>
-    <a href="#contact">Yiyecekler</a>
-    <a href="#contact">Program Ekle</a>
-    <a href="#contact">Kullanıcı Raporları</a>
-    <a href="#contact">Kullanıcı Testleri</a>
-    <a href="#about">Hakkında</a>
-</div>
-<section>
+import styles from './App.module.css';
+
+function App() {
+  return (
+    <>
+      <div class={styles.topnav}>
+        <a class={styles.active} href="#home">Kullanıcı Bilgileri</a>
+        <a href="#news">Tarifler</a>
+        <a href="#contact">Yiyecekler</a>
+        <a href="#contact">Program Ekle</a>
+        <a href="#contact">Kullanıcı Raporları</a>
+        <a href="#contact">Kullanıcı Testleri</a>
+        <a href="#about">Hakkında</a>
+      </div>
+
+
+      <section>
     <nav>
         <ul>
             <li><a href="#">Adı: </a></li>
@@ -31,8 +30,11 @@
     </article>
 </section>
 
-<footer>
-    <p>Footer</p>
-</footer>
-</body>
-</html>
+      <footer>
+        @ Healthy Systems
+      </footer>
+    </>
+  );
+}
+
+export default App;
